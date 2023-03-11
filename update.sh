@@ -1,7 +1,7 @@
 #! /bin/bash
 
 dot=$HOME/Playground/dotfiles
-for dir in $(\ls .config); do
+for dir in $(\ls $dot/.config); do
 	cp -rf $HOME/.config/$dir $dot/.config
 done
 cp -rf $HOME/.local/share/fonts $dot/.local/share

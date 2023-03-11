@@ -6,12 +6,12 @@ lvim.colorscheme = "adwaita"
 -- lvim options
 lvim.format_on_save = true
 lvim.builtin.alpha.active = true
-lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.terminal.active = true
-lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 lvim.builtin.treesitter.highlight.enable = true
 lvim.builtin.treesitter.rainbow.enable = true
+lvim.builtin.cmp.cmdline.enable = true
+lvim.builtin.cmp.experimental.ghost_text = true
+lvim.builtin.cmp.window = nil
 lvim.builtin.terminal.execs = {
 	{ vim.o.shell, "<leader>tf", "Float Terminal" },
 	{ vim.o.shell, "<leader>th", "Horizontal Terminal", "horizontal", 0.3 },
@@ -59,6 +59,16 @@ lvim.builtin.which_key.mappings["t"] = { "", "Terminal" }
 lvim.builtin.which_key.mappings["sH"] = {
 	"<CMD>Telescope current_buffer_fuzzy_find<CR>",
 	"Telescope here",
+}
+-- autocmds
+lvim.autocommands = {
+	{
+		"BufEnter",
+		{
+			pattern = { "*.md", "*.mdx", "*.tex" },
+			command = "set wrap",
+		},
+	},
 }
 
 -- Leap.nvim

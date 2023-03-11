@@ -26,6 +26,7 @@ alias :q='exit' # For neovim terminal
 alias vim=nvim
 alias res='source ~/.zshrc'
 alias g=lazygit
+alias git-config-watt-toolkit='git config --global http.sslCAInfo /etc/ssl/certs/SteamTools.Certificate.cer'
 alias gitc='git clone'
 alias gitd='git difftool --no-symlinks --dir-diff'
 alias screenkey='screenkey --no-systray -s small -p fixed -g 10%x5%+90%+2%'

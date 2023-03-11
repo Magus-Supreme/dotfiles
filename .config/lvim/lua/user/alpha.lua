@@ -20,7 +20,7 @@ lvim.builtin.alpha = {
 					-- { "l", "  Manage plugins", "<CMD>Lazy<CR>" },
 					-- { "m", "  Manage LSPs", "<CMD>Mason<CR>" },
 					{ "p", lvim.icons.ui.Project .. "  Projects ", "<CMD>Telescope projects<CR>" },
-					{ "r", lvim.icons.ui.History .. "  Recent files", ":Telescope oldfiles <CR>" },
+					{ "r", lvim.icons.ui.History .. "  Recent files", "<CMD>Telescope oldfiles <CR>" },
 					{
 						"c",
 						lvim.icons.ui.Gear .. "  Configuration",

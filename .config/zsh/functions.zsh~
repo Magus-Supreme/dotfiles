@@ -39,14 +39,6 @@ function texcomp() {
 	mv -f .latextmp/*.pdf .
 }
 
-function git-config-watt-toolkit() {
-	current=$(grep -i 'sslCAInfo' $HOME/.gitconfig)
-	if [[ $current != '' ]]; then
-		sed -i '/sslCAInfo/d' $HOME/.gitconfig
-		sed -i '/[http]/d' $HOME/.gitconfig
-		echo "Removed watt tool certificate in .gitconfig"
-	else
-		git config --global http.sslCAInfo /home/xiaoshihou/.local/share/Steam++/SteamTools.Certificate.cer
-		echo "Added watt tool certificate to .gitconfig"
-	fi
+function git_config_watt_toolkit(){
+    if 
 }

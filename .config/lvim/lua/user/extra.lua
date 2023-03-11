@@ -39,6 +39,16 @@ lvim.plugins = {
 			})
 		end,
 	},
+	-- show bracket context using treesitter
+	{
+		"haringsrob/nvim_context_vt",
+		config = function()
+			require("nvim_context_vt").setup({
+				prefix = "",
+				min_rows = 6,
+			})
+		end,
+	},
 	-- rainbow brackets
 	"p00f/nvim-ts-rainbow",
 	-- eye candy for vim native ui
@@ -54,26 +64,6 @@ lvim.plugins = {
 	"folke/zen-mode.nvim",
 	-- color highlights
 	"NvChad/nvim-colorizer.lua",
-	-- plugin manager gui
-	{
-		"xiaoshihou514/marketplace.nvim",
-		config = function()
-			require("marketplace").setup({
-				curl = "curl --insecure -s ",
-				readme_action = function(markdown)
-					local m = string.gsub(markdown, '"', '\\"')
-					local command = 'echo "' .. m .. '" | mdcat'
-					local handle = io.popen(command)
-					if handle == nil then
-						return markdown
-					end
-					local result = handle:read("*a")
-					handle:close()
-					return result
-				end,
-			})
-		end,
-	},
 
 	-- colorschemes
 	"EdenEast/nightfox.nvim",
@@ -87,6 +77,7 @@ lvim.plugins = {
 	"ishan9299/nvim-solarized-lua",
 	"sainnhe/everforest",
 	"marko-cerovac/material.nvim",
+	"rebelot/kanagawa.nvim",
 	{ "projekt0n/github-nvim-theme", version = "v0.0.7" },
 
 	-- rust setup
