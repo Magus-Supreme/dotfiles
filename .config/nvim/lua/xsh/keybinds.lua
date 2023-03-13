@@ -31,8 +31,8 @@ bind("n", "<leader>bb", ":bprevious<CR>", opts)
 
 -- Insert --
 bind("i", "qi", "<ESC>", opts)
-bind("i", "<C-l>", "<Left>", opts)
-bind("i", "<C-h>", "<Right>", opts)
+bind("i", "<C-h>", "<Left>", opts)
+bind("i", "<C-l>", "<Right>", opts)
 
 -- Visual --
 -- Stay in indent mode

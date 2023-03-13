@@ -10,7 +10,7 @@ xbps-query -m >$dot/xbps-packages.list
 # dconf reset -f /org/cinnamon/
 # dconf load /org/cinnamon/ < cinnamon.dconf
 dconf dump /org/cinnamon/ >$dot/cinnamon.dconf
+sed -i '/history/d' $dot/cinnamon.dconf
 cp -rf $HOME/.mozilla/firefox/*.default-default/chrome $dot/.mozilla/firefox/
 git add .
-git commit -m "backup"
-git push
+lazygit

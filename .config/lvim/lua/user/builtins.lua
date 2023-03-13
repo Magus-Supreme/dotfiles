@@ -7,6 +7,7 @@ lvim.colorscheme = "adwaita"
 lvim.format_on_save = true
 lvim.builtin.alpha.active = true
 lvim.builtin.terminal.active = true
+lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 lvim.builtin.treesitter.highlight.enable = true
 lvim.builtin.treesitter.rainbow.enable = true
 lvim.builtin.cmp.cmdline.enable = true

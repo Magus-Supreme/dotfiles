@@ -24,14 +24,23 @@ function full_upgrade() {
 
 function cd() {
 	if [ -n "$1" ]; then
-		chdir "$@" && exa --group-directories-first --icons
+		chdir "$@"
+		if [ $(\ls $pwd | wc -l) -lt 140 ]; then
+			exa --group-directories-first --icons
+		fi
 	else
-		chdir ~ && exa --group-directories-first --icons
+		chdir ~
+		if [ $(\ls $pwd | wc -l) -lt 140 ]; then
+			exa --group-directories-first --icons
+		fi
 	fi
 }
 
 function z() {
-	__zoxide_z "$@" && exa --group-directories-first --icons $pwd
+	__zoxide_z "$@"
+	if [ $(\ls $pwd | wc -l) -lt 140 ]; then
+		exa --group-directories-first --icons
+	fi
 }
 
 function texcomp() {

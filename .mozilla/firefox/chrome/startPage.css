@@ -105,27 +105,12 @@ url("about:newtab") {
   scrollbar-color: #afafaf #2c2c2c !important;
 }
 
-body {
-  --newtab-search-icon: url("chrome://global/skin/icons/search-glass.svg") !important;
-}
-
 @-moz-document url("about:privatebrowsing") {
   body {
     background-color: var(--firefoxcss-main-bg-color) !important;
     background-size: auto;
     background-size: cover !important;
   }
-
-  #about-private-browsing-logo.logo {
-    background-image: url("image/about-logo-private-changed.png") !important;
-    opacity: 0.9 !important;
-  }
-
-  /* html.private {
-		background-color: #1e1e1e80 !important;
-		background-image: url(image/.jpg) !important ;
-		background-size: cover  !important;
-	} */
 
   #search-handoff-button {
     appearance: none !important;
@@ -197,11 +182,6 @@ url("about:newtab") {
     --newtab-background-color: var(--firefoxcss-main-bg-color) !important;
     background-size: cover !important;
   }
-  /* For background blur */
-  /* .outer-wrapper {
-    background-color: #1e1e1e88 !important;
-    backdrop-filter: blur(24px) !important;
-  } */
 
   .search-wrapper .search-handoff-button {
     appearance: none !important;
@@ -238,7 +218,6 @@ url("about:newtab") {
   }
 
   #root .customize-menu {
-    background-image: url("image/noise-512x512.png") !important;
     background-color: #1e1e1e8c !important;
     backdrop-filter: blur(24px) !important;
   }
@@ -297,7 +276,6 @@ url("about:newtab") {
 
   .top-site-outer .context-menu,
   .card-outer .context-menu {
-    background-image: url("image/noise-512x512.png") !important;
     background-color: #13131380 !important;
     backdrop-filter: blur(32px) !important;
     border: 1px solid hsla(0, 0%, 70%, 0.145);
@@ -446,10 +424,6 @@ url("about:newtab") {
     }
   }
 
-   .outer-wrapper .search-wrapper .search-handoff-button {
-    /* background-image: url("image/search-glass.svg") !important; */
-    /* background-size: 16px !important;  */
-  }
 }
 
 @-moz-document url("about:firefoxview") {

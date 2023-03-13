@@ -1,6 +1,5 @@
 [/]
 alttab-switcher-delay=100
-command-history=['pkill tmux', 'pkill wechat', 'pkill exe', 'pkill geph', 'xcolor | xclip -in -selection clipboard; notify-send "Color copied to xclip"', 'pkill plank', 'plank']
 desklet-snap-interval=25
 desktop-effects-map='traditional'
 desktop-effects-minimize='traditional'
