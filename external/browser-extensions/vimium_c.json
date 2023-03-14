@@ -1,0 +1,40 @@
+{
+	"name": "Vimium C",
+	"@time": "14/03/2023, 19:08:33",
+	"time": 1678792113162,
+	"environment": {
+		"extension": "1.99.97",
+		"platform": "linux",
+		"firefox": 109
+	},
+	"exclusionRules": [
+		{
+			"passKeys": "H J K L h j k l r ",
+			"pattern": ":https://monkeytype.com"
+		}
+	],
+	"keyLayout": 2,
+	"keyMappings": [
+		"#!no-check",
+		"unmap H",
+		"unmap J",
+		"unmap K",
+		"unmap L",
+		"map H previousTab",
+		"map L nextTab",
+		"map J goForward",
+		"map K goBack",
+		"map <c-j> scrollPageDown",
+		"map <c-k> scrollPageUp",
+		""
+	],
+	"localeEncoding": "",
+	"searchEngines": [
+		"e: https://www.ecosia.org/search?method=index&addon=firefox&q=%s",
+		"g: https://github.com/search?q=%s",
+		"r: https://doc.rust-lang.org/std/index.html?search=%s",
+		""
+	],
+	"searchUrl": "https://www.startpage.com/do/dsearch?query=$s Startpage",
+	"vimSync": true
+}
