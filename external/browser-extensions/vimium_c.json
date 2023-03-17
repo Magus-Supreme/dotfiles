@@ -1,7 +1,7 @@
 {
 	"name": "Vimium C",
-	"@time": "14/03/2023, 19:08:33",
-	"time": 1678792113162,
+	"@time": "16/03/2023, 18:37:24",
+	"time": 1678963044936,
 	"environment": {
 		"extension": "1.99.97",
 		"platform": "linux",
@@ -9,7 +9,7 @@
 	},
 	"exclusionRules": [
 		{
-			"passKeys": "H J K L h j k l r ",
+			"passKeys": "H J K L O h j k l o r t ",
 			"pattern": ":https://monkeytype.com"
 		}
 	],
