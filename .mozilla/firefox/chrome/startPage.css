@@ -7,7 +7,7 @@
 @-moz-document url("about:home"),
 url("about:newtab") {
   body {
-    background: url("wallpaper/wallpaper.png") center/cover no-repeat fixed !important;
+    background: url("wallpaper/wallpaper.jpg") center/cover no-repeat fixed !important;
   }
 
   .outer-wrapper .search-wrapper .search-handoff-button {

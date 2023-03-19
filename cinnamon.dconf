@@ -38,8 +38,8 @@ cursor-blink-time=336
 cursor-size=24
 cursor-theme='Vimix-cursors'
 font-name='CaskaydiaCove Nerd Font Semi-Light 9'
-gtk-theme='Mc-OS-CTLina-XFCE-Dark'
-icon-theme='kora'
+gtk-theme='Material-DeepOcean-BL'
+icon-theme='DeepOcean'
 text-scaling-factor=1.0
 toolkit-accessibility=true
 
@@ -86,7 +86,7 @@ autorun-x-content-start-app=@as []
 
 [desktop/peripherals/keyboard]
 delay=uint32 500
-numlock-state=false
+numlock-state=true
 repeat-interval=uint32 30
 
 [desktop/peripherals/mouse]
@@ -124,7 +124,7 @@ tile-maximize=true
 workspace-cycle=true
 
 [settings-daemon/peripherals/keyboard]
-numlock-state='off'
+numlock-state='on'
 
 [settings-daemon/plugins/power]
 button-power='interactive'
@@ -142,4 +142,4 @@ buttons-have-icons=false
 menus-have-icons=false
 
 [theme]
-name='CBlack'
+name='Material-DeepOcean-BL'

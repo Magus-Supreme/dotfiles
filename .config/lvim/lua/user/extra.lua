@@ -39,6 +39,20 @@ lvim.plugins = {
 			})
 		end,
 	},
+	-- trim trailing spaces
+	{
+		"lewis6991/spaceless.nvim",
+		config = function()
+			require("spaceless").setup()
+		end,
+	},
+	-- more sensible search and replace
+	{
+		"roobert/search-replace.nvim",
+		config = function()
+			require("search-replace").setup()
+		end,
+	},
 	-- show bracket context using treesitter
 	{
 		"haringsrob/nvim_context_vt",
@@ -59,7 +73,17 @@ lvim.plugins = {
 		},
 	},
 	-- deal with these "'[{( !
-	"tpope/vim-surround",
+	{
+		"roobert/surround-ui.nvim",
+		dependencies = {
+			"kylechui/nvim-surround",
+		},
+		config = function()
+			require("surround-ui").setup({
+				root_key = "S",
+			})
+		end,
+	},
 	-- zen mode
 	"folke/zen-mode.nvim",
 	-- color highlights

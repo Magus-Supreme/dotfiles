@@ -30,6 +30,7 @@ alias gitc='git clone'
 alias gitd='git difftool --no-symlinks --dir-diff'
 alias screenkey='screenkey --no-systray -s small -p fixed -g 10%x5%+90%+2%'
 alias bottles='flatpak run com.usebottles.bottles'
+alias okular='flatpak run org.kde.okular'
 alias pip='python -m pip'
 alias view="kitty +kitten icat"
 alias neofetch='neofetch --kitty --crop_mode normal'
