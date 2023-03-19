@@ -1,8 +1,6 @@
 lvim.plugins = {
 	-- Smooth scroll for the terminal
 	"opalmay/vim-smoothie",
-	-- hl common comments
-	"folke/todo-comments.nvim",
 	-- lsp signature hints
 	{
 		"ray-x/lsp_signature.nvim",
@@ -11,17 +9,9 @@ lvim.plugins = {
 			require("lsp_signature").on_attach()
 		end,
 	},
-	-- interactive buffer repl
-	{
-		"metakirby5/codi.vim",
-		cmd = "Codi",
-		lazy = true,
-	},
 	-- faster motion
 	"ggandor/leap.nvim",
 	"nvim-lua/plenary.nvim",
-	-- better find-and-replace
-	"windwp/nvim-spectre",
 	-- pick up from where you left
 	{
 		"ethanholz/nvim-lastplace",
@@ -73,21 +63,29 @@ lvim.plugins = {
 		},
 	},
 	-- deal with these "'[{( !
+	"kylechui/nvim-surround",
 	{
 		"roobert/surround-ui.nvim",
-		dependencies = {
-			"kylechui/nvim-surround",
-		},
 		config = function()
 			require("surround-ui").setup({
 				root_key = "S",
 			})
 		end,
 	},
+	-- better find-and-replace
+	"windwp/nvim-spectre",
+	-- hl common comments
+	"folke/todo-comments.nvim",
 	-- zen mode
 	"folke/zen-mode.nvim",
 	-- color highlights
 	"NvChad/nvim-colorizer.lua",
+	-- interactive buffer repl
+	{
+		"metakirby5/codi.vim",
+		cmd = "Codi",
+		lazy = true,
+	},
 
 	-- colorschemes
 	"EdenEast/nightfox.nvim",

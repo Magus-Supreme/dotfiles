@@ -1,26 +1,25 @@
-keymap = lvim.builtin.which_key.mappings
+local whichkey = lvim.builtin.which_key.mappings
 
-keymap["br"] = { name = "SearchReplaceSingleBuffer" }
+whichkey["br"] = { name = "Search & replace" }
+whichkey["brw"] = { "<CMD>SearchReplaceSingleBufferCWord<CR>", "Word" }
+whichkey["brW"] = { "<CMD>SearchReplaceSingleBufferCWORD<CR>", "Big Word" }
+whichkey["bre"] = { "<CMD>SearchReplaceSingleBufferCExpr<CR>", "Expression" }
+whichkey["brc"] = { "<CMD>SearchReplaceSingleBufferSelections<CR>", "Choose selection" }
+whichkey["brs"] = { "<CMD>SearchReplaceSingleBufferOpen<CR>", "Search" }
 
-keymap["rs"] = { "<CMD>SearchReplaceSingleBufferSelections<CR>", "SearchReplaceSingleBuffer [s]elction list" }
-keymap["ro"] = { "<CMD>SearchReplaceSingleBufferOpen<CR>", "[o]pen" }
-keymap["rw"] = { "<CMD>SearchReplaceSingleBufferCWord<CR>", "[w]ord" }
-keymap["rW"] = { "<CMD>SearchReplaceSingleBufferCWORD<CR>", "[W]ORD" }
-keymap["re"] = { "<CMD>SearchReplaceSingleBufferCExpr<CR>", "[e]xpr" }
-keymap["rf"] = { "<CMD>SearchReplaceSingleBufferCFile<CR>", "[f]ile" }
+whichkey["brb"] = { name = "Multibuffer" }
+whichkey["brbw"] = { "<CMD>SearchReplaceMultiBufferCWord<CR>", "Word" }
+whichkey["brbW"] = { "<CMD>SearchReplaceMultiBufferCWORD<CR>", "Big Word" }
+whichkey["brbe"] = { "<CMD>SearchReplaceMultiBufferCExpr<CR>", "Expression" }
+whichkey["brbc"] = { "<CMD>SearchReplaceMultiBufferSelections<CR>", "Choose selection" }
+whichkey["brbs"] = { "<CMD>SearchReplaceMultiBufferOpen<CR>", "Search" }
 
-keymap["rb"] = { name = "SearchReplaceMultiBuffer" }
-
-keymap["rbs"] = { "<CMD>SearchReplaceMultiBufferSelections<CR>", "SearchReplaceMultiBuffer [s]elction list" }
-keymap["rbo"] = { "<CMD>SearchReplaceMultiBufferOpen<CR>", "[o]pen" }
-keymap["rbw"] = { "<CMD>SearchReplaceMultiBufferCWord<CR>", "[w]ord" }
-keymap["rbW"] = { "<CMD>SearchReplaceMultiBufferCWORD<CR>", "[W]ORD" }
-keymap["rbe"] = { "<CMD>SearchReplaceMultiBufferCExpr<CR>", "[e]xpr" }
-keymap["rbf"] = { "<CMD>SearchReplaceMultiBufferCFile<CR>", "[f]ile" }
-
-lvim.keys.visual_block_mode["<C-r>"] = [[<CMD>SearchReplaceSingleBufferVisualSelection<CR>]]
-lvim.keys.visual_block_mode["<C-s>"] = [[<CMD>SearchReplaceWithinVisualSelection<CR>]]
-lvim.keys.visual_block_mode["<C-b>"] = [[<CMD>SearchReplaceWithinVisualSelectionCWord<CR>]]
+-- search and replace the selection
+lvim.keys.visual_block_mode["<C-s>"] = "<CMD>SearchReplaceSingleBufferVisualSelection<CR>"
+-- search and replace in selection
+lvim.keys.visual_block_mode["/"] = "<CMD>SearchReplaceWithinVisualSelection<CR>"
+-- search and replace in selection word under cursor
+lvim.keys.visual_block_mode["<C-b>"] = "<CMD>SearchReplaceWithinVisualSelectionCWord<CR>"
 
 -- show the effects of a search / replace in a live preview window
 vim.o.inccommand = "split"

@@ -35,29 +35,31 @@ vim.opt.mousemodel = "extend"
 vim.opt.timeoutlen = 200
 
 -- keymappings
+local keys = lvim.keys
 lvim.leader = "space"
-lvim.keys.normal_mode["<M-v>"] = "<C-v>"
-lvim.keys.insert_mode["qi"] = "<ESC>"
-lvim.keys.insert_mode["<C-l>"] = "<Right>"
-lvim.keys.insert_mode["<C-h>"] = "<Left>"
-lvim.keys.visual_mode["qv"] = "<ESC>"
-lvim.keys.command_mode["<C-l>"] = "<Right>"
-lvim.keys.command_mode["<C-h>"] = "<Left>"
-lvim.keys.command_mode["<C-k>"] = "<Up>"
-lvim.keys.command_mode["<C-j>"] = "<Down>"
+keys.normal_mode["<M-v>"] = "<C-v>"
+keys.insert_mode["qi"] = "<ESC>"
+keys.insert_mode["<C-l>"] = "<Right>"
+keys.insert_mode["<C-h>"] = "<Left>"
+keys.visual_mode["qv"] = "<ESC>"
+keys.command_mode["<C-l>"] = "<Right>"
+keys.command_mode["<C-h>"] = "<Left>"
+keys.command_mode["<C-k>"] = "<Up>"
+keys.command_mode["<C-j>"] = "<Down>"
 -- whichkey
-lvim.builtin.which_key.mappings["c"] = {}
-lvim.builtin.which_key.mappings["h"] = {}
-lvim.builtin.which_key.mappings["T"] = {}
-lvim.builtin.which_key.mappings["f"] = {}
-lvim.builtin.which_key.mappings["br"] = { "<CMD>luafile %<CR>", "Luafile" }
-lvim.builtin.which_key.mappings["bz"] = {
+local whichkey = lvim.which_key.mappings
+whichkey["c"] = {}
+whichkey["T"] = {}
+whichkey["f"] = {}
+whichkey["bh"] = {}
+whichkey["bl"] = { "<CMD>luafile %<CR>", "Luafile" }
+whichkey["bz"] = {
 	"<CMD>lua require('zen-mode').toggle({window={width=1}})<CR>",
 	"Zen mode",
 }
-lvim.builtin.which_key.mappings["sT"] = { ":%s/", "Find and replace" }
-lvim.builtin.which_key.mappings["t"] = { "", "Terminal" }
-lvim.builtin.which_key.mappings["sH"] = {
+whichkey["sT"] = { ":%s/", "Find and replace" }
+whichkey["t"] = { "", "Terminal" }
+whichkey["sH"] = {
 	"<CMD>Telescope current_buffer_fuzzy_find<CR>",
 	"Telescope here",
 }
