@@ -45,7 +45,7 @@ text-scaling-factor=1.0
 toolkit-accessibility=true
 
 [desktop/keybindings]
-custom-list=['__dummy__', 'custom0', 'custom1']
+custom-list=['custom2', 'custom1', 'custom0', '__dummy__']
 
 [desktop/keybindings/custom-keybindings/custom0]
 binding=['<Alt>slash']
@@ -56,6 +56,11 @@ name='flameshot'
 binding=['<Super>e', '<Alt>e']
 command='caja'
 name='file manager'
+
+[desktop/keybindings/custom-keybindings/custom2]
+binding=['<Primary><Shift>Escape']
+command='/home/xiaoshihou/.config/conky/toggle.sh'
+name='toggle conky'
 
 [desktop/keybindings/media-keys]
 home=['XF86Explorer']
@@ -87,7 +92,7 @@ autorun-x-content-start-app=@as []
 
 [desktop/peripherals/keyboard]
 delay=uint32 500
-numlock-state=true
+numlock-state=false
 repeat-interval=uint32 30
 
 [desktop/peripherals/mouse]
@@ -125,7 +130,7 @@ tile-maximize=true
 workspace-cycle=true
 
 [settings-daemon/peripherals/keyboard]
-numlock-state='on'
+numlock-state='off'
 
 [settings-daemon/plugins/power]
 button-power='interactive'

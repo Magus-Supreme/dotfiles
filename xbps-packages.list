@@ -14,7 +14,7 @@ btop-1.2.13_1
 cage-0.1.4_2
 caja-1.26.1_1
 celluloid-0.24_1
-chromium-110.0.5481.77_1
+chromium-111.0.5563.64_1
 chrony-4.3_2
 cinnamon-5.4.9_2
 cmatrix-2.0_1
@@ -38,11 +38,11 @@ fd-8.7.0_1
 ffmpeg-4.4.3_2
 firefox-109.0.1_1
 flameshot-12.1.0_1
-flatpak-1.15.3_2
+flatpak-1.15.4_1
 fuzzypkg-1.0.10_1
 fzf-0.38.0_1
 gcc-12.2.0_2
-github-cli-2.24.3_1
+github-cli-2.25.1_1
 gnome-boxes-43.2_1
 gnome-keyring-42.1_1
 gnome-themes-standard-3.28_3
@@ -55,10 +55,15 @@ htop-3.2.2_1
 kitty-0.26.5_2
 lazygit-0.37.0_1
 leafpad-0.8.19_1
+libdrm-32bit-2.4.114_1
+libgcc-32bit-12.2.0_2
+libglvnd-32bit-1.4.0_1
 libreoffice-7.4.3.2_1
+libstdc++-32bit-12.2.0_2
 lvm2-2.02.187_2
 make-4.3_3
 mdcat-1.0.0_1
+mesa-dri-32bit-22.3.5_1
 meson-1.0.1_1
 neofetch-7.1.0_2
 neovim-0.8.3_1
@@ -81,6 +86,7 @@ ripgrep-13.0.0_1
 screenkey-1.5_2
 sddm-0.19.0_3
 starship-1.12.0_1
+steam-1.0.0.76_1
 syncthing-1.23.2_1
 system-config-printer-1.5.18_1
 system-config-printer-udev-1.5.18_1
@@ -90,6 +96,8 @@ unzip-6.0_15
 v4l2loopback-0.12.7_1
 viewnior-1.8_1
 void-docs-browse-2021.10.06_1
+void-repo-multilib-6_4
+void-repo-multilib-nonfree-6_4
 void-repo-nonfree-9_6
 vsv-2.0.0_1
 wget-1.21.3_1

@@ -16,7 +16,7 @@ lvim.builtin.cmp.window = nil
 lvim.builtin.terminal.execs = {
 	{ vim.o.shell, "<leader>tf", "Float Terminal" },
 	{ vim.o.shell, "<leader>th", "Horizontal Terminal", "horizontal", 0.3 },
-	{ vim.o.shell, "<leader>tv", "Vertical Terminal", "vertical", 0.4 },
+	{ vim.o.shell, "<leader>tv", "Vertical Terminal", "vertical", 0.35 },
 }
 lvim.builtin.bufferline.options = {
 	mode = "tabs",

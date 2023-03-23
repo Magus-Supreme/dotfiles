@@ -13,7 +13,7 @@ function proxy() {
 
 function full_upgrade() {
 	sudo xbps-install -Suy
-	sudo xbps-remove -Oo
+	sudo xbps-remove -Ooy
 	flatpak update -y
 	flatpak repair &>/dev/null
 	sudo rm -rf /var/tmp/flatpak-cache-*
